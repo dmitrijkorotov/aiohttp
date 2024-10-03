@@ -1,0 +1,65 @@
+@baseUrl = http://0.0.0.0:8080/user
+@baseUrl_2 = http://0.0.0.0:8080/advertisment/
+
+#Создание пользователя
+POST {{baseUrl}}/
+Content-Type: application/json
+
+{
+    "name": "te_d4544534545fdf22",
+    "password": "fhhd4fdd",
+    "email": "ts@iff3345443445d2l.com"
+}
+
+###
+
+#Получение пользователя
+GET {{baseUrl}}/28/
+
+###
+
+#Обновление пользователя
+PATCH {{baseUrl}}/28/
+Content-Type: application/json
+
+{
+    "name": "tets_4"
+}
+
+###
+
+#Удаление пользователя
+DELETE {{baseUrl}}/28/
+
+###
+
+#Создание объявления
+POST {{baseUrl_2}}
+Content-Type: application/json
+
+{
+    "title": "Тестовоdfdfе 20",
+    "description": "Описанfdfsие_00",
+    "user_id": 25
+}
+
+###
+
+#Получение объявления
+GET {{baseUrl_2}}/3/
+
+###
+
+#Обновление объявления
+PATCH {{baseUrl_2}}/1
+Content-Type: application/json
+
+{
+    "title": "Тестовое объявление_10",
+    "description": "Описание объявления_100"
+}
+
+###
+
+#Удаление объявления
+DELETE {{baseUrl_2}}/1
