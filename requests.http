@@ -1,5 +1,5 @@
 @baseUrl = http://0.0.0.0:8080/user
-@baseUrl_2 = http://0.0.0.0:8080/advertisment/
+@baseUrl_2 = http://0.0.0.0:8080/advertisment
 
 #Создание пользователя
 POST {{baseUrl}}/
@@ -14,12 +14,12 @@ Content-Type: application/json
 ###
 
 #Получение пользователя
-GET {{baseUrl}}/28/
+GET {{baseUrl}}/1/
 
 ###
 
 #Обновление пользователя
-PATCH {{baseUrl}}/28/
+PATCH {{baseUrl}}/1/
 Content-Type: application/json
 
 {
@@ -29,37 +29,37 @@ Content-Type: application/json
 ###
 
 #Удаление пользователя
-DELETE {{baseUrl}}/28/
+DELETE {{baseUrl}}/1/
 
 ###
 
 #Создание объявления
-POST {{baseUrl_2}}
+POST {{baseUrl_2}}/
 Content-Type: application/json
 
 {
-    "title": "Тестовоdfdfе 20",
-    "description": "Описанfdfsие_00",
-    "user_id": 25
+    "title": "test",
+    "description": "test_2",
+    "user_id": 1
 }
 
 ###
 
 #Получение объявления
-GET {{baseUrl_2}}/3/
+GET {{baseUrl_2}}/1/
 
 ###
 
 #Обновление объявления
-PATCH {{baseUrl_2}}/1
+PATCH {{baseUrl_2}}/1/
 Content-Type: application/json
 
 {
-    "title": "Тестовое объявление_10",
-    "description": "Описание объявления_100"
+    "title": "test_5",
+    "description": "test_100"
 }
 
 ###
 
 #Удаление объявления
-DELETE {{baseUrl_2}}/1
+DELETE {{baseUrl_2}}/1/
